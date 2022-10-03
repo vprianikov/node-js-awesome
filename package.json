@@ -1,0 +1,45 @@
+{
+  "name": "node-js-awesome",
+  "version": "0.1.0",
+  "description": "",
+  "keywords": [
+    "nodejs",
+    "javascript",
+    "eslint",
+    "jest"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Vasilii Prianikov",
+    "email": "88191516+vprianikov@users.noreply.github.com"
+  },
+  "contributors": [],
+  "homepage": "https://github.com/vprianikov/node-js-awesome/wiki",
+  "bugs": {
+    "url": "https://github.com/vprianikov/node-js-awesome/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vprianikov/node-js-awesome"
+  },
+  "scripts": {
+    "start": "node --es-module-specifier-resolution=node src/index.js",
+    "serve": "nodemon --es-module-specifier-resolution=node src/index.js",
+    "lint": "eslint --fix src/** tests/**",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest"
+  },
+  "type": "module",
+  "engines": {
+    "yarn": "1.x"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@jest/globals": "^29.1.2",
+    "eslint": "^8.24.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^27.0.4",
+    "jest": "^29.1.2",
+    "nodemon": "^2.0.20"
+  }
+}
